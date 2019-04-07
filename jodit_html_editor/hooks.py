@@ -15,7 +15,7 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/jodit_html_editor/css/jodit.min.css"
+app_include_css = ["/assets/jodit_html_editor/css/jodit.min.css", "/assets/jodit_html_editor/css/style.css"]
 app_include_js = "/assets/jodit_html_editor/js/jodit.min.js"
 
 # include js, css files in header of web template
@@ -27,9 +27,11 @@ app_include_js = "/assets/jodit_html_editor/js/jodit.min.js"
 
 # include js in doctype views
 doctype_js = {
+    """
     "Item" : "public/js/Item.js",
     "Web Page" : "public/js/web_page.js",
     "Web Form" : "public/js/web_form.js"
+    """
     }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
